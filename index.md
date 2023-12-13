@@ -1,3 +1,5 @@
+Check out the competition details below and be sure to join our Discord server [https://discord.gg/dA8jpFVa9t](https://discord.gg/dA8jpFVa9t)
+
 # Motivation
 Control systems play a vital role in managing and regulating various processes and devices across diverse application domains. 
 Their pervasive nature makes them a cornerstone of modern technology. 
@@ -47,22 +49,17 @@ The winner(s) will be awarded a certificate.
 We are actively in pursuit of sponsorships to furnish monetary prizes.
 
 # Organizers
-**Giorgia Nadizar**, University of Trieste, giorgia.nadizar@phd.units.it
-
+**Giorgia Nadizar**, University of Trieste, [giorgia.nadizar@phd.units.it](mailto:giorgia.nadizar@phd.units.it) <br>
 _Giorgia Nadizar is a third year PhD student at the University of Trieste, Italy. Her research interests lie at the intersection of embodied AI and explainable/interpretable AI.
 _
 
-**Luigi Rovito**, University of Trieste, luigi.rovito@phd.units.it 
+**Luigi Rovito**, University of Trieste, [luigi.rovito@phd.units.it](mailto:luigi.rovito@phd.units.it ) <br>
+Luigi Rovito is a third year PhD student at the University of Trieste, Italy. His research interests are genetic programming for cryptography and interpretable ML.
 
-_Luigi Rovito is a third year PhD student at the University of Trieste, Italy. His research interests are genetic programming for cryptography and interpretable ML.
-_
 
-**Dennis G. Wilson**, ISAE-SUPAERO, University of Toulouse, dennis.wilson@isae.fr
+**Dennis G. Wilson**, ISAE-SUPAERO, University of Toulouse, [dennis.wilson@isae.fr](mailto:dennis.wilson@isae.fr) <br>
+Dennis G. Wilson is an Associate Professor at ISAE-Supaero in Toulouse, France. They research evolutionary algorithms, deep learning, and applications of AI to climate problems.
 
-_Dennis G. Wilson is an Associate Professor at ISAE-Supaero in Toulouse, France. They research evolutionary algorithms, deep learning, and applications of AI to climate problems.
-_
+**Eric Medvet**, University of Trieste, [emedvet@units.it](mailto:emedvet@units.it) <br>
+Eric Medvet is an Associate Professor at the University of Trieste, Italy. His research interests include embodied AI, artificial life, and evolutionary optimization.
 
-**Eric Medvet**, University of Trieste, emedvet@units.it
-
-_Eric Medvet is an Associate Professor at the University of Trieste, Italy. His research interests include embodied AI, artificial life, and evolutionary optimization.
-_
