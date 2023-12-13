@@ -54,8 +54,8 @@ We are actively in pursuit of sponsorships to furnish monetary prizes.
 
 # Organizers
 **Giorgia Nadizar**, University of Trieste, [giorgia.nadizar@phd.units.it](mailto:giorgia.nadizar@phd.units.it) <br>
-_Giorgia Nadizar is a third year PhD student at the University of Trieste, Italy. Her research interests lie at the intersection of embodied AI and explainable/interpretable AI.
-_
+Giorgia Nadizar is a third year PhD student at the University of Trieste, Italy. Her research interests lie at the intersection of embodied AI and explainable/interpretable AI.
+
 
 **Luigi Rovito**, University of Trieste, [luigi.rovito@phd.units.it](mailto:luigi.rovito@phd.units.it ) <br>
 Luigi Rovito is a third year PhD student at the University of Trieste, Italy. His research interests are genetic programming for cryptography and interpretable ML.
