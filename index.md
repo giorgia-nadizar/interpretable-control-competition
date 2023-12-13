@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 Check out the competition details below and be sure to join our Discord server [https://discord.gg/dA8jpFVa9t](https://discord.gg/dA8jpFVa9t)
 
 # Motivation
