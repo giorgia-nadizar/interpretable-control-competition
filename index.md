@@ -2,7 +2,8 @@
 layout: default
 ---
 
-Check out the competition details below and be sure to join our Discord server [https://discord.gg/dA8jpFVa9t](https://discord.gg/dA8jpFVa9t)
+Check out the competition details below :point_down: 
+and be sure to join our Discord server [https://discord.gg/dA8jpFVa9t](https://discord.gg/dA8jpFVa9t) for questions or news :loudspeaker:
 
 # Motivation
 Control systems play a vital role in managing and regulating various processes and devices across diverse application domains. 
@@ -17,11 +18,7 @@ First, we want to create a basis of comparison for different techniques emphasiz
 Second, through the involvement of a panel of human evaluators, we strive to uncover the key characteristics that enhance the interpretability of control policies, making them more accessible to the general user.
 
 # Participation
-Participants will be asked to solve a control problem, which we will specify at a later date. 
-To foster active engagement, we are in the process of exploring a selection of captivating control tasks. 
-Once our choices are finalized, we will deliver a comprehensive, step-by-step tutorial on the setup procedure to simplify entrance in the competition. 
-Moreover, we will establish both a website and a Discord channel to facilitate interactions and provide participants with a platform for asking questions.
-
+Participants will be asked to solve a control problem, which we will communicate by the end of January. 
 Participants will have the freedom to apply their preferred methods to generate and interpret policies that effectively address the proposed task. 
 However, we promote the inclusion of EC techniques into either the policy generation or explanation process, as a valuable component of addressing the proposed task.
 
@@ -29,6 +26,9 @@ Each submission will have to include the following:
 - Control Policy: participants will have to submit a control policy of their choice, which can take any form, as long as the participants can provide a clear and coherent explanation for it. 
 - Policy Explanation and Pipeline Description (up to 4 pages): this document should contain an interpretability analysis of the policy, covering all relevant information deducible from it. Moreover, it should outline the participant's pipeline for obtaining the control policy and formulating the corresponding explanation. 
 - Code for Reproducibility: participants will have to make their code available to enhance transparency and allow others to replicate and build upon the solutions provided.
+
+More details on the submission procedure will follow by the end of January.
+In the meanwhile, if you want to ask any question or provide some feedback, join us at our Discord server: [https://discord.gg/dA8jpFVa9t](https://discord.gg/dA8jpFVa9t).
 
 # Submission deadline
 13th June 2024.
@@ -51,19 +51,24 @@ We also plan to extend an invitation to select participants to become co-authors
 # Prize
 The winner(s) will be awarded a certificate. 
 We are actively in pursuit of sponsorships to furnish monetary prizes.
+If you are interested in the competition and want to become a sponsor, feel free to reach out to any of the organizers!
 
 # Organizers
 **Giorgia Nadizar**, University of Trieste, [giorgia.nadizar@phd.units.it](mailto:giorgia.nadizar@phd.units.it) <br>
-Giorgia Nadizar is a third year PhD student at the University of Trieste, Italy. Her research interests lie at the intersection of embodied AI and explainable/interpretable AI.
+Giorgia Nadizar is a third year PhD student at the University of Trieste, Italy. 
+Her research interests lie at the intersection of embodied AI and explainable/interpretable AI.
 
 
 **Luigi Rovito**, University of Trieste, [luigi.rovito@phd.units.it](mailto:luigi.rovito@phd.units.it ) <br>
-Luigi Rovito is a third year PhD student at the University of Trieste, Italy. His research interests are genetic programming for cryptography and interpretable ML.
+Luigi Rovito is a third year PhD student at the University of Trieste, Italy. 
+His research interests are genetic programming for cryptography and interpretable ML.
 
 
 **Dennis G. Wilson**, ISAE-SUPAERO, University of Toulouse, [dennis.wilson@isae.fr](mailto:dennis.wilson@isae.fr) <br>
-Dennis G. Wilson is an Associate Professor at ISAE-Supaero in Toulouse, France. They research evolutionary algorithms, deep learning, and applications of AI to climate problems.
+Dennis G. Wilson is an Associate Professor at ISAE-Supaero in Toulouse, France. 
+They research evolutionary algorithms, deep learning, and applications of AI to climate problems.
 
 **Eric Medvet**, University of Trieste, [emedvet@units.it](mailto:emedvet@units.it) <br>
-Eric Medvet is an Associate Professor at the University of Trieste, Italy. His research interests include embodied AI, artificial life, and evolutionary optimization.
+Eric Medvet is an Associate Professor at the University of Trieste, Italy. 
+His research interests include embodied AI, artificial life, and evolutionary optimization.
 
