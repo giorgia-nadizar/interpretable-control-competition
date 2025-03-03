@@ -11,7 +11,7 @@ def main():
     # Possible Observation Types: ['ram', 'rgb', 'grayscale'].
     # Possible Modes: [0, 1] - Possible Difficulties: [0, 1, 2, 3].
     # The gym environment parameters are fixed to these values for the competition.
-    env = gym.make("ALE/Pong-v5", mode=0, difficulty=0, obs_type='rgb', render_mode='human', full_action_space=False)
+    env = gym.make("ALE/Pong-v4", mode=0, difficulty=0, obs_type='rgb', render_mode='human', full_action_space=False)
 
     # random controller: it picks random actions at every step.
     controller = RandomController(env.action_space)

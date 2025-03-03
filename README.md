@@ -36,9 +36,9 @@ The `pong` package contains two files:
 
 - `controller.py` has a general controller class (which you can extend with your own implementation),
   and a random controller for testing purposes
-- `example.py` shows the basic evaluation loop for the chosen environment, the `ALE/Pong-v5`
+- `example.py` shows the basic evaluation loop for the chosen environment, the `ALE/Pong-v4`
 
-The competition's final evaluation will be performed with the same environment (`ALE/Pong-v5`).
+The competition's final evaluation will be performed with the same environment (`ALE/Pong-v4`).
 
 
 ## Competition rules
