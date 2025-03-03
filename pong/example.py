@@ -10,6 +10,7 @@ from controller import RandomController
 def main():
     # Possible Observation Types: ['ram', 'rgb', 'grayscale'].
     # Possible Modes: [0, 1] - Possible Difficulties: [0, 1, 2, 3].
+    # Possible Render Modes: [human, rgb_array]
     # The gym environment parameters are fixed to these values for the competition.
     env = gym.make("Pong-v4", mode=0, difficulty=0, obs_type='rgb', render_mode='human', full_action_space=False)
 
