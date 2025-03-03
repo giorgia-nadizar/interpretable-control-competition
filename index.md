@@ -2,8 +2,6 @@
 layout: default
 ---
 
-:warning: :boom: **Submissions closed, thanks to everyone who participated! We'll notify winners at Gecco.** :boom: :warning:
-
 Check out the competition details below :point_down: 
 and be sure to join our Discord server [https://discord.gg/dA8jpFVa9t](https://discord.gg/dA8jpFVa9t) for questions or news :loudspeaker:
 
@@ -20,14 +18,12 @@ First, we want to create a basis of comparison for different techniques emphasiz
 Second, through the involvement of a panel of human evaluators, we strive to uncover the key characteristics that enhance the interpretability of control policies, making them more accessible to the general user.
 
 # Tasks
-We have chosen two tasks: [**Walker2D**](https://gymnasium.farama.org/environments/mujoco/walker2d/) for continuous control, 
-and [**2048**](https://en.wikipedia.org/wiki/2048_(video_game)) for discrete control.
-We provide details and examples for both tasks in the [competition repository](https://github.com/giorgia-nadizar/interpretable-control-competition).
-For both tasks we set a limit of **200000** episodes for optimizing the policies.
-An episode is a simulation of 1000 steps for Walker2D and a game for 2048.
+We have chosen a visual control task: [**Atari PONG**](https://ale.farama.org/environments/pong/).
+We provide details and examples in the [competition repository](https://github.com/giorgia-nadizar/interpretable-control-competition).
+For both tasks we set a limit of **200000 * 18_000** steps for optimizing the policies.
+An episode is a game of up 18_000 steps.
 
 # Participation
-Participants can take part in **either or both** of the tracks.
 Participants will have the freedom to apply their preferred methods to generate and interpret policies that effectively address the proposed task. 
 However, we promote the inclusion of EC techniques into either the policy generation or explanation process, as a valuable component of addressing the proposed task.
 
@@ -42,14 +38,12 @@ Each submission will have to include the following:
     - _optimization file_, i.e., a Python script, from which the optimization process can be reproduced
     - _optimization log_ reporting the progression of the policies scores during the performed optimization
  
-All submission files will have to be uploaded to a github repository. The submission will then have to be made through the following form: [https://forms.gle/bUKLKmKRGQ1niNZm7](https://forms.gle/bUKLKmKRGQ1niNZm7)
+All submission files will have to be uploaded to a github repository. The submission will then have to be made through the following form: [https://forms.gle/HaXBsz9YnYJtnwEV7](https://forms.gle/HaXBsz9YnYJtnwEV7)
 
 If you want to ask any question or provide some feedback, join us at our Discord server: [https://discord.gg/dA8jpFVa9t](https://discord.gg/dA8jpFVa9t).
 
 # Submission deadline
-20th June 2024 AoE.
-
-~~13th June 2024 AoE.~~
+20th June 2025 AoE.
 
 # Evaluation criteria
 The final score for each entry will be determined by combining the two following terms.
