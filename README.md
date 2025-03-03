@@ -13,7 +13,8 @@ conda env create -f environment.yml
 conda activate ic39
 ```
 
-Alternatively, if you do not want to use conda, you can also directly create a virtual environment from the Python version installed on your system (must be at least Python 3.9.21):
+Alternatively, if you do not want to use conda, you can also directly create a virtual environment from the Python
+version installed on your system (must be at least Python 3.9.21):
 
 ```shell
 git clone https://github.com/giorgia-nadizar/interpretable-control-competition.git
@@ -36,10 +37,15 @@ The `pong` package contains two files:
 
 - `controller.py` has a general controller class (which you can extend with your own implementation),
   and a random controller for testing purposes
-- `example.py` shows the basic evaluation loop for the chosen environment, the `ALE/Pong-v4`
+- `example.py` shows the basic evaluation loop for the chosen environment, the `Pong-v4`
 
-The competition's final evaluation will be performed with the same environment (`ALE/Pong-v4`).
+The competition's final evaluation will be performed with the same environment (`Pong-v4`).
 
+_Note:_ in some cases running the `example.py` with `render_mode='human'` might result in a libGL error. One potential fix
+is to run the following command in your conda environment.
+```shell
+conda install -c conda-forge libstdcxx-ng
+```
 
 ## Competition rules
 
@@ -59,7 +65,7 @@ Each submission will have to include:
     - _optimization file_, i.e., a Python script, from which the optimization process can be reproduced
     - _optimization log_ reporting the progression of the policies scores during the performed optimization
 
-### Evaluation  
+### Evaluation
 
 Each submission will be evaluated according to two criteria:
 
