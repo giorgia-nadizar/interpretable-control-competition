@@ -20,7 +20,7 @@ Second, through the involvement of a panel of human evaluators, we strive to unc
 # Tasks
 We have chosen a visual control task: [**Atari PONG**](https://ale.farama.org/environments/pong/).
 We provide details and examples in the [competition repository](https://github.com/giorgia-nadizar/interpretable-control-competition).
-For both tasks we set a limit of **200000 * 18_000** steps for optimizing the policies.
+For both tasks we set a limit of **200_000 * 18_000** steps for optimizing the policies.
 An episode is a game of up 18_000 steps.
 
 # Participation
