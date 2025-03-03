@@ -1,1 +1,1 @@
-# interpretable-control-competition
+# Interpretable Control Competition
