@@ -1,6 +1,6 @@
 # Interpretable Control Competition
 
-Repository for the [GECCO'25](https://gecco-2025.sigevo.org/HomePage) interpretable control competition.
+Repository for the [GECCO'26](https://gecco-2026.sigevo.org/HomePage) interpretable control competition.
 
 ## Install
 
@@ -10,21 +10,21 @@ Clone the repository and create the conda virtual environment with all needed pa
 git clone https://github.com/giorgia-nadizar/interpretable-control-competition.git
 cd interpretable-control-competition
 conda env create -f environment.yml
-conda activate ic39
+conda activate belugaenv
 ```
 
 Alternatively, if you do not want to use conda, you can also directly create a virtual environment from the Python
-version installed on your system (must be at least Python 3.9.21):
+version installed on your system (must be at least Python 3.12.12):
 
 ```shell
 git clone https://github.com/giorgia-nadizar/interpretable-control-competition.git
 cd interpretable-control-competition
-python3 -m venv ic39
-source ic39/bin/activate
+python3 -m venv belugaenv
+source belugaenv/bin/activate
 pip3 install -r requirements.txt
 ```
 
-## Control Task: ATARI Pong
+## Control Task: Beluga
 
 ### Task details
 
@@ -58,7 +58,7 @@ Each submission will have to include:
 - **Control policy score, explanation, and pipeline description**: a document
     - containing the score obtained by the policy, an interpretability analysis of the policy (covering all
       relevant information deducible from it), and the pipeline used to obtain it
-    - of up to 2 pages in the [Gecco format](https://gecco-2025.sigevo.org/Call-for-Papers), excluding references
+    - of up to 2 pages in the [Gecco format](https://gecco-2026.sigevo.org/Call-for-Papers), excluding references
 - **Control policy and code**: for reproducibility and assessment purposes, we require
     - _updated environment file_ or _additional requirements_ needed to make the code work
     - _run file_, i.e., a Python script, from which the submitted policy can be assessed on the environment
