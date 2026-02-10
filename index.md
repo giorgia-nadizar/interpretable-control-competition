@@ -40,8 +40,8 @@ We also plan to extend an invitation to select participants to become co-authors
 The winner(s) will be awarded a certificate.
 
 # Organizers
-**Giorgia Nadizar**, University of Trieste, [giorgia.nadizar@phd.units.it](mailto:giorgia.nadizar@phd.units.it) <br>
-Giorgia Nadizar is a third year PhD student at the University of Trieste, Italy. 
+**Giorgia Nadizar**, University of Trieste, [giorgia.nadizar@irit.fr](mailto:giorgia.nadizar@irit.fr) <br>
+Giorgia Nadizar is a postdoctoral researcher at the Toulouse Capitole University, France. 
 Her research interests lie at the intersection of embodied AI and explainable/interpretable AI.
 
 **Luigi Rovito**, University of Trieste, [luigi.rovito@phd.units.it](mailto:luigi.rovito@phd.units.it ) <br>
