@@ -18,43 +18,18 @@ First, we want to create a basis of comparison for different techniques emphasiz
 Second, through the involvement of a panel of human evaluators, we strive to uncover the key characteristics that enhance the interpretability of control policies, making them more accessible to the general user.
 
 # Tasks
-We have chosen a visual control task: [**Atari PONG**](https://ale.farama.org/environments/pong/).
-We provide details and examples in the [competition repository](https://github.com/giorgia-nadizar/interpretable-control-competition).
-For both tasks we set a limit of **200_000 * 18_000** steps for optimizing the policies.
-An episode is a game of up 18_000 steps.
+Building on previous editions, which explored both continuous and discrete control settings (from robotic locomotion to game-based environments), this year’s competition will take a step toward more realistic, safety-relevant scenarios. In collaboration with Airbus, a global leader in aerospace innovation and manufacturing, we will focus on a challenge related to aeronautical decision-making, focusing on relevant concrete scenarios that exemplify the complexity and reliability demands of real-world systems.
 
-# Participation
-Participants will have the freedom to apply their preferred methods to generate and interpret policies that effectively address the proposed task. 
-However, we promote the inclusion of EC techniques into either the policy generation or explanation process, as a valuable component of addressing the proposed task.
+Participants will be welcome to enter the competition using their preferred methods to develop and interpret control policies for addressing the proposed task. We particularly encourage the incorporation of evolutionary computation techniques to enhance either policy generation or interpretability.
 
-Each submission will have to include the following:
-- **Control policy score, explanation, and pipeline description**: a document
-    - containing the score obtained by the policy, an interpretability analysis of the policy (covering all
-      relevant information deducible from it), and the pipeline used to obtain it
-    - of up to 2 pages in the [Gecco format](https://gecco-2024.sigevo.org/Call-for-Papers), excluding references
-- **Control policy and code**: for reproducibility and assessment purposes, we require
-    - _updated environment file_ or _additional requirements_ needed to make the code work
-    - _run file_, i.e., a Python script, from which the submitted policy can be assessed on the environment
-    - _optimization file_, i.e., a Python script, from which the optimization process can be reproduced
-    - _optimization log_ reporting the progression of the policies scores during the performed optimization
- 
-All submission files will have to be uploaded to a github repository. The submission will then have to be made through the following form: [https://forms.gle/HaXBsz9YnYJtnwEV7](https://forms.gle/HaXBsz9YnYJtnwEV7)
+Submissions will be evaluated based on both performance and interpretability. Performance will be assessed through simulations of each submitted policy, while interpretability will be evaluated by a panel of judges, including domain experts from the industry.
+
+:loudspeaker: Details on the competition task will be coming very soon, stay tuned! :loudspeaker:
 
 If you want to ask any question or provide some feedback, join us at our Discord server: [https://discord.gg/dA8jpFVa9t](https://discord.gg/dA8jpFVa9t).
 
 # Submission deadline
-20th June 2025 AoE.
-
-# Evaluation criteria
-The final score for each entry will be determined by combining the two following terms.
-- Performance Rank: this will be evaluated by simulating the submitted policy to assess its effectiveness in solving the given problem.
-- Interpretability Rank: this aspect will be appraised by a panel of judges. The guidelines provided to the jury will include the following considerations:
-  - Clarity of the pipeline
-  - Readability of the model
-  - Clarity of the explanation provided
-  - Amount of processing required to derive the explanation from the raw policy
-
-These two ranks will be combined using the geometric mean to compute the overall global rank for each competition entry.
+10th June 2026 AoE.
 
 # Results and dissemination
 Our objective is to raise awareness regarding the importance of interpretability within the realm of control systems. 
@@ -69,7 +44,6 @@ The winner(s) will be awarded a certificate.
 Giorgia Nadizar is a third year PhD student at the University of Trieste, Italy. 
 Her research interests lie at the intersection of embodied AI and explainable/interpretable AI.
 
-
 **Luigi Rovito**, University of Trieste, [luigi.rovito@phd.units.it](mailto:luigi.rovito@phd.units.it ) <br>
 Luigi Rovito is a third year PhD student at the University of Trieste, Italy. 
 His research interests are genetic programming for cryptography and interpretable ML.
@@ -82,6 +56,9 @@ They research evolutionary algorithms, deep learning, and applications of AI to 
 **Eric Medvet**, University of Trieste, [emedvet@units.it](mailto:emedvet@units.it) <br>
 Eric Medvet is an Associate Professor at the University of Trieste, Italy. 
 His research interests include embodied AI, artificial life, and evolutionary optimization.
+
+**Florent Teichteil Koenigsbuch**, AIRBUS <br>
+Florent Teichteil Koenigsbuch is an engineer at AIRBUS, working at the frontier of operation research, artificial intelligence and applied mathematics.
 
 # Sponsors
 We're actively looking for sponsors, contact us if you wish to become one!
