@@ -29,7 +29,7 @@ Submissions will be evaluated based on both performance and interpretability. Pe
 If you want to ask any question or provide some feedback, join us at our Discord server: [https://discord.gg/dA8jpFVa9t](https://discord.gg/dA8jpFVa9t).
 
 # Submission deadline
-10th June 2026 AoE.
+1st June 2026 AoE.
 
 # Results and dissemination
 Our objective is to raise awareness regarding the importance of interpretability within the realm of control systems. 
