@@ -29,7 +29,7 @@ pip3 install -r requirements.txt
 ### Task details
 
 For more details on the 'Pong' we refer to the official documentation on the ALE website:
-[https://ale.farama.org/environments/pong/](https://ale.farama.org/environments/pong/).
+[https://github.com/TUPLES-Trustworthy-AI/Beluga-AI-Challenge-Toolkit](https://github.com/TUPLES-Trustworthy-AI/Beluga-AI-Challenge-Toolkit).
 
 ### Repository content
 
