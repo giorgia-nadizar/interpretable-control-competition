@@ -119,6 +119,8 @@ For a full description of available parameters, refer to the help documentation 
 
 In the simulation script, JSON problem instances will be used to encode the problem by using the classical PDDL (Planning Domain Description Language) formalism.
 
+For the sake of completeness and to enable you to inspect the PDDL files directly, this .sh script also automatically generates the PDDL files associated with the problem (the domain file and the instance file). These .pddl files won't be read by the simulation script, since it will only ready the JSON file and internally encode the instance in PDDL without saving additional files on the system. These PDDL files are saved only to enable you to directly inspect them for gathering further insights into this formalism within our specific domain.
+
 ---
 
 #### `controller.py`

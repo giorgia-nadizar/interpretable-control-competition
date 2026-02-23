@@ -47,7 +47,7 @@ def main(instance_file, variant: Variant, problem_out):
     if variant.probabilistic:
         domain_encoding = generate_domain(variant, problem_out, inst, 'domain_' + problem_name + ".pddl")
     else:
-        domain_encoding = generate_domain(variant, problem_out)
+        domain_encoding = generate_domain(variant, problem_out, inst=None, domain_name='domain_' + problem_name + ".pddl")
 
     generate_problem(variant, inst, problem_name, domain_encoding, problem_out)
 

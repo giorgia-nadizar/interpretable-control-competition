@@ -14,3 +14,5 @@ if [[ $output_name != *.json ]]; then
 fi
 
 python3 generate_instance.py -s $seed -or $occupancy_rate -t $type -f $n_flights -v -o problems/ -on $output_name -pp -pm arrivals
+python3 json2PDDL.py -i problems/$output_name -o problems/
+
