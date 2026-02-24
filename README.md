@@ -73,6 +73,7 @@ The objective is to control these operations efficiently while respecting struct
 ### Toolkit and Benchmark
 
 The official Beluga AI Challenge repository also links the full code for the challenge at [Beluga AI Challenge Toolkit](https://github.com/TUPLES-Trustworthy-AI/Beluga-AI-Challenge-Toolkit), with examples of problem instances at [Beluga AI Challenge Benchmark](https://github.com/TUPLES-Trustworthy-AI/Beluga-AI-Challenge-Benchmarks). Refer to them, along with the official Beluga AI Challenge repository, for any in-depth details. Moreover, the code of the challenge employs the library **scikit-decide**, whose documentation is available at [Scikit-Decide Docs](https://airbus.github.io/scikit-decide/). Scikit-decide is an AI framework for Reinforcement Learning, Automated Planning and Scheduling. It has been initiated at Airbus AI Research and notably received contributions through the ANITI and TUPLES projects, and also from ANU.
+The library **plado**, whose repository is located at [PLADO](https://github.com/massle/plado), is also employed as the base engine underlying the toolkit.
 
 ### Repository Content
 
