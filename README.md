@@ -124,9 +124,9 @@ For the sake of completeness and to enable you to inspect the PDDL files directl
 
 If you are not familiar with PDDL, we highly suggest having a look at the following resources so that you can better understand the PDDL files and the domain (credits to the authors of these external resources):
 
-- (https://www.cs.toronto.edu/~sheila/2542/w09/A1/introtopddl2.pdf)[https://www.cs.toronto.edu/~sheila/2542/w09/A1/introtopddl2.pdf]
-- (https://fareskalaboud.github.io/LearnPDDL/)[https://fareskalaboud.github.io/LearnPDDL/]
-- (https://planning.wiki/ref)[https://planning.wiki/ref]
+- [https://www.cs.toronto.edu/~sheila/2542/w09/A1/introtopddl2.pdf](https://www.cs.toronto.edu/~sheila/2542/w09/A1/introtopddl2.pdf)
+- [https://fareskalaboud.github.io/LearnPDDL/](https://fareskalaboud.github.io/LearnPDDL/)
+- [https://planning.wiki/ref](https://planning.wiki/ref)
 
 ---
 
