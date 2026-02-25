@@ -73,7 +73,7 @@ The objective is to control these operations efficiently while respecting struct
 ### Toolkit and Benchmark
 
 The official Beluga AI Challenge repository also links the full code for the challenge at [Beluga AI Challenge Toolkit](https://github.com/TUPLES-Trustworthy-AI/Beluga-AI-Challenge-Toolkit), with examples of problem instances at [Beluga AI Challenge Benchmark](https://github.com/TUPLES-Trustworthy-AI/Beluga-AI-Challenge-Benchmarks). Refer to them, along with the official Beluga AI Challenge repository, for any in-depth details. Moreover, the code of the challenge employs the library **scikit-decide**, whose documentation is available at [Scikit-Decide Docs](https://airbus.github.io/scikit-decide/). Scikit-decide is an AI framework for Reinforcement Learning, Automated Planning and Scheduling. It has been initiated at Airbus AI Research and notably received contributions through the ANITI and TUPLES projects, and also from ANU.
-The library **plado**, whose repository is located at [PLADO](https://github.com/massle/plado), is also employed as the base engine underlying the toolkit.
+The library **plado**, whose repository is located at [Plado](https://github.com/massle/plado), is also employed as the base engine underlying the toolkit, mainly for PDDL handling.
 
 ### Repository Content
 
@@ -144,13 +144,16 @@ Each controller exposes a method:
 control(state: skd_domains.skd_base_domain.State) -> skd_domains.skd_base_domain.Action
 ```
 
-- `State` represents the current observation of the environment. It is composed of two attributes: atoms and fluents. The atoms are the predicates (properties of the world that can be either true or false), while the fluents are the functions (**not** actions), which are numeric, quantitative fluents that define properties of the world that can change over time, such as fuel levels, distances, or costs (actions can change the values of these properties by using, for instance, increase or decrease operations). If a predicate is listed, it means that it holds true in the current state of the world. If fluents attribute is empty, it means that there are no functions in the world, meaning, no numerical properties that can change over time by means of actions (fluents could be empty but even in that case, there could be a function defined as a cost function among the cost functions of the domain).
+- `State` represents the current observation of the environment. It is composed of two attributes: atoms and fluents. The atoms are the predicates (properties of the world that can be either true or false), while the fluents are the functions (**not** actions), which are numeric, quantitative fluents that define properties of the world that can change over time, such as fuel levels, distances, or costs (actions can change the values of these properties by using, for instance, increase or decrease operations). If a predicate is listed, it means that it holds true in the current state of the world. If fluents attribute is empty, it means that there are no functions in the world, meaning, no numerical properties that can change over time by means of actions (fluents could be empty but, even in that case, there could be a function defined as a cost function among the cost functions of the domain).
 - `Action` represents the action chosen by the controller. It is composed of two attributes: action_id and args. The action_id is the ID of the action, while the args are the IDs of the arguments. Actions can change the state of the world and transform that state into another state.
 - Available actions for a given state can be obtained via `get_available_actions`, which outputs a list of actions.
 - Current true predicates of the state can be obtained via `get_true_predicates`, which outputs a list of true predicates for the current state.
-- The `task` method returns the plado.semantics.task.Task object associated with the domain, and it contains several properties (actions, objects, functions, predicates) that associate the IDs to the actual names and parameter definitions.
+- Functions and cost functions (a cost function has no arguments compared to standard functions) of the state can be obtained via `get_functions`, which outputs a list of functions and cost functions for the current state.
+- The `task` method returns the `plado.semantics.task.Task` object associated with the domain, and it contains several properties (actions, objects, functions, predicates) that associate the IDs to the actual names and parameter definitions.
+- Moreover, several methods are exposed to enable you to directly retrieve the different attributes of `Task` (e.g., functions, objects, goal).
+- A method `to_plado` is also available to convert your current `State` (based on the `skd_domains` module) to a `PladoState`, which is a state represented via the **plado** library.
 
-Both State and Action expose the attribute domain. IDs are non-negative integers.
+Both State and Action expose the attribute domain. IDs are indexes starting from 0.
 Your task is to implement your own policy by modifying the `CustomController` class in this file. The `control` method must return a valid action.
 
 ---
@@ -220,7 +223,7 @@ A document:
 - Reporting the score obtained by the policy.
 - Providing an interpretability analysis covering all relevant aspects of the policy.
 - Describing the full pipeline used to obtain the policy.
-- Limited to **2 pages** in the [GECCO format](https://gecco-2026.sigevo.org/Call-for-Papers), excluding references.
+- Limited to **2 PAGES** in the [GECCO format](https://gecco-2026.sigevo.org/Call-for-Papers), excluding references.
 
 ---
 
@@ -246,7 +249,7 @@ For reproducibility and evaluation, you must provide:
   - You may use the provided seed parameter.
   - During evaluation, we may test multiple random seeds.
   
-  If your controller is not stochastic, ignore the seed parameter we provide. As regards the other, eventual parameters of your controller, when submitting, you must choose **one** set of parameters for your controller and we are going to test your controller with the provided set of parameters.
+  If your controller is not stochastic, ignore the seed parameter we provide. As regards the other, eventual parameters of your controller, when submitting, you must choose **ONE** set of parameters for your controller and we are going to test your controller with the provided set of parameters.
 
 - **Optimization log**  
   Reporting the progression of policy scores during the optimization process.
