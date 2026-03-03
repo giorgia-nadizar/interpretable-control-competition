@@ -34,45 +34,43 @@ The problem originates from a logistics scenario proposed by Airbus SE. It conce
 
 ### System Overview
 
-Several Beluga aircraft operate between sites. When a Beluga lands at a production facility, the cargo it carries must be unloaded and stored in a rack system. Conversely, before departure, the aircraft must be loaded with empty jigs that need to be transported elsewhere.
+Several Beluga aircrafts operate between sites. When a Beluga lands at a production facility, the cargo it carries must be unloaded and stored in a rack system. Conversely, before departure, the aircraft must be loaded with empty jigs that need to be transported elsewhere.
 
 The main physical components involved are:
 
-Beluga: Aircrafts transporting large cargoes and components. They need to be unloaded when landing at a production site and then loaded with empty jigs before departing again.
-
-Jigs: Support structures used to hold and transport aircraft parts. A jig can be either full (carrying a part) or empty. The space a jig occupies may differ depending on whether it is full or empty. Each jig has a type, which determines its size characteristics (empty and full).
-
-Racks: Storage units where jigs are placed in sequence. Racks behave as bidirectional queues. Only the jigs located at the two ends (Beluga side or factory side) can be removed. Jigs located inside a rack may require rearrangement operations to become accessible.
-
-Trailers: Mobile rack elements that connect the Beluga and the fixed rack system, or the rack system and the hangars. Jigs slide onto and off trailers during transfers.
-
-Hangars: Intermediate locations where parts are removed from jigs before being sent to production lines. After unloading, jigs become empty and must be returned to the rack system.
+- Beluga: Aircrafts transporting large cargoes and components. They need to be unloaded when landing at a production site and then loaded with empty jigs before departing again.
+- Jigs: Support structures used to hold and transport aircraft parts. A jig can be either full (carrying a part) or empty. The space a jig occupies may differ depending on whether it is full or empty. Each jig has a type, which determines its size characteristics (empty and full).
+- Racks: Storage units where jigs are placed in sequence. Racks behave as bidirectional queues. Only the jigs located at the two ends (Beluga side or factory side) can be removed. Jigs located inside a rack may require rearrangement operations to become accessible.
+- Trailers: Mobile rack elements that connect the Beluga and the fixed rack system, or the rack system and the hangars. Jigs slide onto and off trailers during transfers.
+- Hangars: Intermediate locations where parts are removed from jigs before being sent to production lines. After unloading, jigs become empty and must be returned to the rack system.
 
 ### Operational Phases
 
 The logistics process can be divided into two main contexts: operations during a Beluga visit and operations between flights.
 
-1. When a Beluga lands two high-level tasks must be completed. First, unload full jigs from the Beluga and store them in the rack system. Here, individual jig identities matter: the specific jigs carried by the aircraft must be handled explicitly. Load empty jigs onto the Beluga before departure. In this case, only jig types and required quantities matter. Any empty jig matching the required type can be selected; specific jig identities are irrelevant.
+1. When a Beluga lands two high-level tasks must be completed.
+   - First, unload full jigs from the Beluga and store them in the rack system. Here, individual jig identities matter: the specific jigs carried by the aircraft must be handled explicitly.
+   - Load empty jigs onto the Beluga before departure. In this case, only jig types and required quantities matter. Any empty jig matching the required type can be selected; specific jig identities are irrelevant.
 
-2. Between two Beluga flights three types of activities may take place. Send parts to production lines, when full jigs are removed from racks (when accessible) and transported via trailers to hangars. Parts are removed in the hangars and sent to production. Then, return empty jigs to racks. Basically, after unloading, empty jigs are sent back from hangars and stored in the rack system. If needed, jigs at rack edges may be moved between racks to free access to jigs located inside. These operations improve accessibility and prepare the system for future loading or unloading tasks.
+2. Between two Beluga flights three types of activities may take place.
+   - Send parts to production lines, when full jigs are removed from racks (when accessible) and transported via trailers to hangars. Parts are removed in the hangars and sent to production.
+   - Then, return empty jigs to racks. Basically, after unloading, empty jigs are sent back from hangars and stored in the rack system.
+   - If needed, jigs at rack edges may be moved between racks to free access to jigs located inside. These operations improve accessibility and prepare the system for future loading or unloading tasks.
 
 ### Key Planning Challenges
 
 The control problem arises from several structural constraints.
 
-Limited accessibility: only edge jigs can be directly removed.
-
-Variable space occupation depending on jig state (full vs. empty).
-
-Coordination between unloading, loading, production supply, and rack reorganisation.
-
-Distinction between operations requiring exact jig identities (incoming full jigs) and operations requiring only jig types (outgoing empty jigs).
+- Limited accessibility: only edge jigs can be directly removed.
+- Variable space occupation depending on jig state (full vs. empty).
+- Coordination between unloading, loading, production supply, and rack reorganisation.
+- Distinction between operations requiring exact jig identities (incoming full jigs) and operations requiring only jig types (outgoing empty jigs).
 
 The objective is to control these operations efficiently while respecting structural and temporal constraints of the system.
 
 ### Toolkit and Benchmark
 
-The official Beluga AI Challenge repository also links the full code for the challenge at [Beluga AI Challenge Toolkit](https://github.com/TUPLES-Trustworthy-AI/Beluga-AI-Challenge-Toolkit), with examples of problem instances at [Beluga AI Challenge Benchmark](https://github.com/TUPLES-Trustworthy-AI/Beluga-AI-Challenge-Benchmarks). Refer to them, along with the official Beluga AI Challenge repository, for any in-depth details. Moreover, the code of the challenge employs the library **scikit-decide**, whose documentation is available at [Scikit-Decide Docs](https://airbus.github.io/scikit-decide/). Scikit-decide is an AI framework for Reinforcement Learning, Automated Planning and Scheduling. It has been initiated at Airbus AI Research and notably received contributions through the ANITI and TUPLES projects, and also from ANU.
+The official Beluga AI Challenge repository also links the full code for the challenge at [Beluga AI Challenge Toolkit](https://github.com/TUPLES-Trustworthy-AI/Beluga-AI-Challenge-Toolkit), with examples of problem instances at [Beluga AI Challenge Benchmark](https://github.com/TUPLES-Trustworthy-AI/Beluga-AI-Challenge-Benchmarks). Refer to them, along with the official Beluga AI Challenge repository, for any in-depth detail. Moreover, the code of the challenge employs the library **scikit-decide**, whose documentation is available at [Scikit-Decide Docs](https://airbus.github.io/scikit-decide/). Scikit-decide is an AI framework for Reinforcement Learning, Automated Planning and Scheduling. It has been initiated at Airbus AI Research and notably received contributions through the ANITI and TUPLES projects, and also from ANU.
 The library **plado**, whose repository is located at [Plado](https://github.com/massle/plado), is also employed as the base engine underlying the toolkit, mainly for PDDL handling.
 
 ### Repository Content
