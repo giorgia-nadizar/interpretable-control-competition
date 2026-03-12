@@ -24,7 +24,7 @@ Participants will be welcome to enter the competition using their preferred meth
 
 Submissions will be evaluated based on both performance and interpretability. Performance will be assessed through simulations of each submitted policy, while interpretability will be evaluated by a panel of judges, including domain experts from the industry.
 
-:loudspeaker: ✈️  **Details on the competition task will be coming very soon, stay tuned!** ✈️ :loudspeaker: 
+Details on the task and base code to use as a starting point can be found at [https://github.com/giorgia-nadizar/interpretable-control-competition](https://github.com/giorgia-nadizar/interpretable-control-competition).
 
 If you want to ask any question or provide some feedback, join us at our Discord server: [https://discord.gg/dA8jpFVa9t](https://discord.gg/dA8jpFVa9t).
 
