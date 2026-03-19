@@ -4,7 +4,7 @@ Repository for the [GECCO'26](https://gecco-2026.sigevo.org/HomePage) interpreta
 
 ## Install
 
-Clone the repository and create the conda virtual environment with all needed packages.
+Clone the repository and create the conda virtual environment with all needed packages (Python version must be at least Python 3.12.12).
 
 ```shell
 git clone https://github.com/giorgia-nadizar/interpretable-control-competition.git
@@ -14,7 +14,7 @@ conda activate belugaenv
 ```
 
 Alternatively, if you do not want to use conda, you can also directly create a virtual environment from the Python
-version installed on your system (must be at least Python 3.12.12):
+version installed on your system (Python version must be at least Python 3.12.12):
 
 ```shell
 git clone https://github.com/giorgia-nadizar/interpretable-control-competition.git
@@ -23,6 +23,18 @@ python3 -m venv belugaenv
 source belugaenv/bin/activate
 pip3 install -r requirements.txt
 ```
+
+## Test
+
+After creating and activating your Python/conda environment with all needed packages, to test an example of simple simulation with an example problem and a random controller, execute the following from the terminal:
+
+```shell
+cd beluga
+python3 simulation.py --max_simulation_steps 100 --domain_seed 42 --controller_seed 42 --problem_name example --controller_name random --verbose --save-final-reward
+```
+
+This will create a .txt file containing the total reward in the folder 'final_rewards' (contained in the 'beluga' folder, the one with all the code and problem instances).
+This execution leverages the simulation script and it is executed on an example of problem instance (can be found in the 'problems' folder) by using a random controller (controllers are defined in the controller script).
 
 ## Control Task: Beluga Logistic Planning
 
