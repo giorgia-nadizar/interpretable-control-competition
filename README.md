@@ -248,7 +248,7 @@ For reproducibility and evaluation, you must provide:
   Including your implementation of `CustomController`, with all required imports you need from external libraries and/or your own code.
 
 - **Updated `simulation.py` (if needed)**  
-  Only to pass additional parameters to the `CustomController` constructor, if required.
+  Only to pass additional parameters to the `CustomController` constructor, if required. We personally suggest assigning default values to your parameters in the `CustomController` constructor within `controller.py`, this way, you can avoid modifying `simulation.py`, which remains unchanged.
 
   ⚠️ No other modifications are allowed:
   - Do not modify the domain.
@@ -259,7 +259,7 @@ For reproducibility and evaluation, you must provide:
   - You may use the provided seed parameter.
   - During evaluation, we may test multiple random seeds.
   
-  If your controller is not stochastic, ignore the seed parameter we provide. As regards the other, eventual parameters of your controller, when submitting, you must choose **ONE** set of parameters for your controller and we are going to test your controller with the provided set of parameters.
+  If your controller is not stochastic, ignore the seed parameter we provide. As regards the other, eventual parameters of your controller, when submitting, you must choose **ONE** set of parameters for your controller and we are going to test your controller with the provided set of parameters. We personally suggest assigning default values to your parameters in the `CustomController` constructor within `controller.py`, this way, you can avoid modifying `simulation.py`, which remains unchanged.
 
 - **Optimization log**  
   Reporting the progression of policy scores during the optimization process.
