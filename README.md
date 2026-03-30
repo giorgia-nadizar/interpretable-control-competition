@@ -272,6 +272,8 @@ For reproducibility and evaluation, you must provide:
 ---
 
 Failure to comply with these structural and implementation constraints may result in rejection of the submission.
+Submit by filling in the [Google form](https://docs.google.com/forms/d/e/1FAIpQLSc5efIy3Ie-MpLhZf3vDGPIt7rzbwAhmvuL-CFibHPu8tUPeg/viewform?usp=dialog)
+Deadline 1st June 2026 AoE.
 
 ### Evaluation
 
